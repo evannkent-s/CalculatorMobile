@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number here"
+        android:id="@+id/edtNumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/satu"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/edtNumber"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/dua"
+        android:layout_toRightOf="@id/satu"
+        android:layout_below="@id/edtNumber"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/tiga"
+        android:layout_toRightOf="@id/dua"
+        android:layout_below="@id/edtNumber"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:id="@+id/empat"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/satu"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/lima"
+        android:layout_toRightOf="@id/empat"
+        android:layout_below="@id/dua"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:id="@+id/enam"
+        android:layout_toRightOf="@id/lima"
+        android:layout_below="@id/tiga"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:id="@+id/tujuh"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/empat"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:id="@+id/delapan"
+        android:layout_toRightOf="@id/tujuh"
+        android:layout_below="@id/lima"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:id="@+id/sembilan"
+        android:layout_toRightOf="@id/delapan"
+        android:layout_below="@id/enam"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/nol"
+        android:layout_below="@+id/delapan"
+        android:layout_toRightOf="@id/tujuh"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/plus"
+        android:layout_below="@+id/nol" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/minus"
+        android:layout_below="@+id/nol"
+        android:layout_toRightOf="@id/plus"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/kali"
+        android:layout_below="@+id/nol"
+        android:layout_toRightOf="@id/minus"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/bagi"
+        android:layout_below="@+id/plus"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:id="@+id/equal"
+        android:layout_below="@+id/minus"
+        android:layout_toRightOf="@id/bagi"/>
+
+
+  </RelativeLayout>
